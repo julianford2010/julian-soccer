@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Ford | Private Soccer Training</title>
+    <style>
+        /* --- RESET & BASIC STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000; /* Sleek Dark Mode */
+            color: #fff;
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; }
+        
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 { font-weight: 800; text-transform: uppercase; letter-spacing: -0.5px; }
+        h1 { font-size: 2.5rem; line-height: 1.1; margin-bottom: 10px; }
+        h2 { font-size: 1.8rem; color: #FDD023; /* Gold accent */ margin-bottom: 20px; }
+        p { margin-bottom: 15px; font-size: 1.1rem; color: #ccc; }
+
+        /* --- LAYOUT --- */
+        .container {
+            max-width: 600px; /* Keeps it looking like a mobile app */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #333;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #FDD023;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(253, 208, 35, 0.3);
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* --- ACTION BUTTONS (The "No Form" Strategy) --- */
+        .cta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.98); }
+        
+        .btn-sms {
+            background-color: #fff;
+            color: #000;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+        }
+        .btn-insta {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            font-size: 1rem;
+            padding: 12px;
+        }
+
+        /* --- ABOUT SECTION --- */
+        .about {
+            padding: 40px 0;
+            border-bottom: 1px solid #333;
+        }
+        .action-shot {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            filter: grayscale(20%); /* Cool dramatic effect */
+        }
+
+        /* --- PRICING CARDS --- */
+        .pricing { padding: 40px 0; }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .unit { font-size: 1rem; color: #888; font-weight: 400; }
+        .card h3 { margin-bottom: 5px; color: #FDD023; }
+        .card ul { list-style: none; margin-top: 15px; }
+        .card li { margin-bottom: 8px; font-size: 0.95rem; color: #ddd; }
+        .card li:before { content: "✓ "; color: #FDD023; }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="hero">
+            <img src="hero-julian.jpg" alt="Julian Ford" class="profile-img">
+            
+            <h1>TRAIN LIKE<br>A PRO.</h1>
+            <p class="tagline">Elite Defensive & Technical Training <br>in Danville, CA.</p>
+            
+            <div class="cta-container">
+                <a href="sms:9259153775?&body=Hi%20Julian,%20I'm%20interested%20in%20private%20training..." class="btn btn-sms">
+                    💬 Text Me to Book
+                </a>
+                
+                <a href="https://wa.me/19259153775" class="btn btn-whatsapp">
+                    📱 WhatsApp Me
+                </a>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2>The Experience</h2>
+            <p><strong>I know the path because I'm on it.</strong></p>
+            <p>I started at the Mustang Academy, worked my way up to ECNL, and now play as a starting Center Back for <strong>Ballistic United in MLS Next</strong>.</p>
+            <p>I specialize in helping defenders and midfielders improve their technical confidence, aerial ability, and tactical positioning.</p>
+            
+            <img src="action-julian.jpg" alt="Julian Training" class="action-shot">
+        </section>
+
+        <section class="pricing">
+            <h2>Packages</h2>
+            
+            <div class="card">
+                <h3>Individual Session</h3>
+                <div class="price">$50 <span class="unit">/ hour</span></div>
+                <ul>
+                    <li>1-on-1 Focused Training</li>
+                    <li>Technical & Defensive Drills</li>
+                    <li>Fitness & Agility</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Small Group</h3>
+                <div class="price">$40 <span class="unit">/ player</span></div>
+                <ul>
+                    <li>2 to 4 Players</li>
+                    <li>Competitive Drills</li>
+                    <li>1v1 & 2v2 Scenarios</li>
+                </ul>
+            </div>
+
+             <div class="card" style="border-color: #FDD023;">
+                <h3>Summer Block</h3>
+                <div class="price">$200 <span class="unit">/ 5 sessions</span></div>
+                <ul>
+                    <li><strong>Buy 4, Get 1 Free</strong></li>
+                    <li>Consistent Development</li>
+                    <li>Priority Scheduling</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class="cta-container">
+                <a href="https://instagram.com" class="btn btn-insta">
+                    📸 Follow on Instagram
+                </a>
+            </div>
+            <p>Training locations: Osage Park & Sycamore Valley Park.</p>
+            <p>&copy; 2025 Julian Ford Soccer Training</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
